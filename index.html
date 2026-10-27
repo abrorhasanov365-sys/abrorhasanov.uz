@@ -92,7 +92,7 @@ section{display:flex;flex-direction:column;gap:18px}
 @media (max-width:520px){.orgs{grid-template-columns:1fr}.facts strong{font-size:1.15rem}.facts div{padding:12px}}
 
 /* Business card — fixed brand look in both themes */
-.card{position:relative;overflow:hidden;aspect-ratio:1.75/1;max-width:100%;border-radius:18px;padding:clamp(18px,4.5vw,30px);
+.card{position:relative;overflow:hidden;aspect-ratio:1.75/1;width:100%;max-width:520px;border-radius:18px;padding:clamp(18px,4.5vw,30px);
   background:linear-gradient(135deg,#066749,#024f3c);color:#ffffff;display:grid;grid-template-columns:1fr auto;gap:16px;
   box-shadow:0 18px 40px -18px rgba(2,79,60,.55)}
 .card::after{content:"";position:absolute;right:-18%;bottom:-55%;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.06)}
@@ -112,12 +112,12 @@ section{display:flex;flex-direction:column;gap:18px}
 .row{display:grid;grid-template-columns:110px 1fr auto;gap:12px;align-items:center;padding:14px 16px;border-top:1px solid var(--line)}
 .row:first-child{border-top:0}
 .row .k{font-size:.82rem;color:var(--muted)}
-.row .v{font-weight:600;text-decoration:none;min-width:0;overflow-wrap:anywhere;user-select:all}
+.row .v{font-weight:600;text-decoration:none;min-width:0;overflow-wrap:break-word;user-select:all}
 .row .v.ph{font-weight:400;color:var(--muted);font-style:italic;user-select:auto}
 button.copy{font:inherit;font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);
   background:var(--bg);color:var(--ink);cursor:pointer}
 button.copy:hover{border-color:var(--mint)}
-@media (max-width:440px){.row{grid-template-columns:1fr auto}.row .k{grid-column:1 / -1}}
+@media (max-width:440px){.row{grid-template-columns:1fr auto}.row .k{grid-column:1 / -1}.row .v{font-size:.92rem}}
 .save{align-self:flex-start;font-weight:600;text-decoration:none;padding:10px 18px;border-radius:999px;background:var(--brand);color:var(--on-brand)}
 .save:hover{filter:brightness(1.1)}
 footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
